@@ -27,12 +27,14 @@
       display: flex;
       justify-content: space-between;
       .portfolio-box{
-        margin: auto;
         width: 30%;
+        height: 100%;
+        margin: auto;
         &:hover{
           .portfolio-image{
             transform: translateY(0);
             border-radius: 10px 10px 0 0;
+            box-shadow: 0 3px 3px gray;
           }
           .portfolio-content{
             transform: translateY(0);
@@ -48,7 +50,6 @@
           width: 100%;
           padding: 10px 0;
           background-color: #ddd;
-          box-shadow: 0 0px 2px black;
           border-radius: 10px;
           img{
             height: 100%;
@@ -67,6 +68,7 @@
           background-color: #eee;
           overflow: hidden;
           border-radius: 10px;
+          color: #333;
           h4{
             font-size: 16px;
             margin-bottom: 15px;

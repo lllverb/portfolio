@@ -11,6 +11,27 @@
     margin: 0 auto;
     &--left{
       width: 50%;
+      .image-area{
+        width: 300px;
+        height: 650px;
+        margin: 0 auto;
+        img{
+          position: absolute;
+          top: 50px;
+          width: 300px;
+          height: 600px;
+          object-fit: cover;
+          box-shadow: 0 0px 20px black;
+        }
+      }
+      .image-shadow{
+        width: 300px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 150px/ 50px;
+        background-color: #222;
+        filter: blur(10px);
+      }
     }
     &--right{
       width: 50%;
@@ -43,7 +64,7 @@
         font-size: 24px;
         letter-spacing: 1.5rem;
         text-indent: 0;
-        margin: 20px 0 10px;
+        margin: 30px 0 10px;
       }
       .profile-content{
         padding-right: 30px;
