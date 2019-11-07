@@ -1,0 +1,87 @@
+.my-career{
+  margin-top: 100px;
+  &__inner{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    &--bar{
+      width: 33%;
+      height: 100%;
+      .bar{
+        position: relative;
+        width: 50%;
+        height: 300px;
+        margin: 0 0 0 auto;
+        border-left: 2px solid black;
+        border-bottom: 2px solid black;
+        .dot{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: translateX(-55%) translateY(55%);
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: black;
+        }
+      }
+    }
+    &--box{
+      width: 67%;
+      height: 100%;
+      .career-title{
+        height: 100px;
+        font-size: 60px;
+        font-weight: bold;
+        background-color: #333;
+      }
+      .career-detail{
+        width: 400px;
+        height: 200px;
+        margin-top: 100px;
+        background-color: #999;
+        border-top: 5px solid #B7282E;
+        border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
+        box-shadow: 0 10px 15px black;
+        &::before {
+          display: block;
+          width: 400px;
+          height: 195px;
+          content: " ";
+          position: absolute;
+          background-image: url('/images/paper.jpg');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
+          opacity: 0.2;
+          z-index: 1;
+        }
+        &__title{
+          height: 30%;
+          line-height: 40px;
+          font-size: 28px;
+          padding: 10px;
+          text-align: center;
+          color: white;
+          font-family: 'YuMincho';
+          font-weight: bold;
+          text-shadow: 0 2px 4px wheat;
+        }
+        &__content{
+          height: 70%;
+          padding: 0 30px 10px;
+          word-wrap: break-word;
+          overflow: hidden;
+        }
+      }
+      .career-detail:nth-child(2n-1){
+        border-radius: 240px 15px 100px 15px / 15px 200px 15px 185px;
+      }
+      .career-detail:nth-child(2n), .career-detail:nth-child(2n)::before{
+        border-radius: 24px 150px 10px 150px / 150px 20px 150px 18px;
+      }
+    }
+  }
+}
