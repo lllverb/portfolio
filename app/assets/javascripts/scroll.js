@@ -1,4 +1,5 @@
 $(function() {
+  // 検討中/////////////////
   var works = $('#works');    
   works.hide();
   //スクロールが100に達したらボタン表示
@@ -9,6 +10,7 @@ $(function() {
           works.fadeOut(500);
       }
   });
+  // 検討中////////////////
   //スクロールしてトップ
   // works.click(function () {
   //     $('body,html').animate({
