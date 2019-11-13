@@ -32,7 +32,7 @@
         height: 100%;
         margin: auto;
         &:hover{
-          .portfolio-image{
+          .portfolio-image1, .portfolio-image2, .portfolio-image3{
             transform: translateY(0);
             border-radius: 10px 10px 0 0;
             box-shadow: 0 3px 3px gray;
@@ -43,7 +43,7 @@
             border-radius: 0 0 10px 10px;
           }
         }
-        .portfolio-image{
+        .portfolio-image1, .portfolio-image2, .portfolio-image3{
           position: relative;
           z-index: 1;
           transform: translateY(50%);

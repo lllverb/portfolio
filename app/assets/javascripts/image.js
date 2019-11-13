@@ -26,4 +26,9 @@ document.addEventListener("turbolinks:load", function() {
     }
     setInterval(nextImage, 5000);
   }
+  $('.image-container').append(`<img src="/assets/azuki-f8931c7b9dced5251d1e7362ca815ebb4ab0cade6bd9979f1a385d4533beaff4.jpg" />`)
+  $('.profile-image').append(`<img src="/assets/kagerou-1a88bd0606f99d99ca86f49d297a6498739137eb25221a41884d9ac26f93fcdb.jpg" />`)
+  $('.portfolio-image1').append(`<img src="/assets/money-314218c083cf4ddac5c0ac527dfd67662c0e48205a755c9ef5901aa03c585ad9.png" />`)
+  $('.portfolio-image2').append(`<img src="/assets/money-314218c083cf4ddac5c0ac527dfd67662c0e48205a755c9ef5901aa03c585ad9.png" />`)
+  $('.portfolio-image3').append(`<img src="/assets/money-314218c083cf4ddac5c0ac527dfd67662c0e48205a755c9ef5901aa03c585ad9.png" />`)
 })
