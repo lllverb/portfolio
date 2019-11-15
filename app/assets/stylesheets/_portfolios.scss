@@ -34,6 +34,7 @@
       max-width: 1300px;
       margin: 0 auto;
       .portfolio-box{
+        position: relative;
         width: 30%;
         max-width: 400px;
         height: 100%;
@@ -47,6 +48,9 @@
             border-radius: 10px 10px 0 0;
             box-shadow: 0 3px 3px black;
             outline: none;
+          }
+          .image-title{
+            transform: translateY(-150%);
           }
           .portfolio-content{
             transform: translateY(0);
@@ -69,6 +73,17 @@
             object-fit: contain;
           }
         }
+        .image-title{
+          position: absolute;
+          top: 65%;
+          left: 10px;
+          padding: 5px 10px;
+          background-color: gray;
+          color: white;
+          z-index: 10;
+          border-radius: 10px;
+          transition:  0.5s;
+        }
         .portfolio-content{
           position: relative;
           z-index: -1;
@@ -76,7 +91,7 @@
           transition:  0.5s;
           height: 250px;
           width: 100%;
-          padding: 5px 25px;
+          padding: 50px 25px 5px;
           background-color: #eee;
           overflow: hidden;
           border-radius: 10px;
