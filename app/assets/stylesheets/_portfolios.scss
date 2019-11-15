@@ -22,20 +22,30 @@
       h3{
         font-size: 20px;
       }
+      h6{
+        font-size: 14px;
+        letter-spacing: 0;
+        margin-top: 10px;
+      }
     }
     &--boxarea{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      max-width: 1300px;
+      margin: 0 auto;
       .portfolio-box{
         width: 30%;
         max-width: 400px;
         height: 100%;
         margin: auto;
+        a{
+          text-decoration: none;
+        }
         &:hover{
           .portfolio-image1, .portfolio-image2, .portfolio-image3{
             transform: translateY(0);
             border-radius: 10px 10px 0 0;
-            box-shadow: 0 3px 3px gray;
+            box-shadow: 0 3px 3px black;
             outline: none;
           }
           .portfolio-content{
@@ -50,8 +60,8 @@
           transition:  0.5s;
           height: 250px;
           width: 100%;
-          padding: 10px 0;
-          background-color: #ddd;
+          padding: 10px;
+          background-color: #333;
           border-radius: 10px;
           img{
             height: 100%;
@@ -66,17 +76,18 @@
           transition:  0.5s;
           height: 250px;
           width: 100%;
-          padding: 25px;
+          padding: 5px 25px;
           background-color: #eee;
           overflow: hidden;
           border-radius: 10px;
-          color: #333;
-          h4{
-            font-size: 16px;
-            margin-bottom: 15px;
+          background-color: #333;
+          color: #eee;
+          white-space: pre-wrap;
+          h6{
+            font-size: 20px;
           }
           p{
-            font-size: 12px;
+            font-size: 16px;
           }
         }
       }

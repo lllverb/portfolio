@@ -33,21 +33,39 @@
         WORKS
       %h3 
         〜実績紹介〜
+      %h6
+        クリックでGitHubに飛びます。READMEにプレビュー付きで詳細を公開しています。
     .my-portfolios__inner--boxarea
       .portfolio-box
-        = link_to money_portfolios_path do
+        = link_to 'https://github.com/lllverb/money' do
           .portfolio-image1
           .portfolio-content
-            %h4
+            %h6
               家計簿アプリ Z∀IW
             %p
-            
+              いわゆる家計簿アプリです。
+              ・カテゴリ別
+              ・カテゴリ詳細別
+              ・人物別 
+              での3種類の分類表示が可能です。
       .portfolio-box
-        .portfolio-image2
-        .portfolio-content
+        = link_to 'https://github.com/lllverb/quiz-app' do
+          .portfolio-image2
+          .portfolio-content
+            %h6
+              QUIZアプリ
+            %p
+              4択クイズアプリです。 
+              他にも某テレビ番組の企画のゲームや
+              有名youtuberの企画のゲームなどを実装しています。
       .portfolio-box
-        .portfolio-image3
-        .portfolio-content
+        = link_to 'https://github.com/lllverb/mercari' do
+          .portfolio-image3
+          .portfolio-content
+            %h6
+              フリマアプリクローン
+            %p
+              某有名フリマアプリのクローンアプリです。
 .my-career
   .my-career__inner
     .my-career__inner--bar
