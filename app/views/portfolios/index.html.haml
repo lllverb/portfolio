@@ -1,9 +1,9 @@
-.my-profile
+.my-profile#profile
   .my-profile__inner
     .my-profile__inner--left
       .image-area
-        .image-container
-      .image-shadow
+        .image-container.anime
+      .image-shadow.anime
     .my-profile__inner--right
       .profile__upper
         .profile-image
@@ -28,113 +28,115 @@
         %h6 ③ スクラムによるアジャイル開発
         %h6 ④ 家計簿アプリ(個人開発)
         %h6 ⑤ QUIZアプリ(個人開発)
-.my-portfolios#works
-  .my-portfolios__inner
-    .my-portfolios__inner--title
-      %h2 
-        WORKS
-      %h3 
-        〜実績紹介〜
-      %h6
-        クリックでGitHubに飛びます。READMEにプレビュー付きで詳細を公開しています。
-    .my-portfolios__inner--boxarea
-      .portfolio-box
-        = link_to 'https://github.com/lllverb/money', target: 'blank' do
-          .portfolio-image1
-          .image-title
-            家計簿アプリ Z∀IW
-          .portfolio-content
+.margin
+.move
+  .my-portfolios
+    .my-portfolios__inner
+      .my-portfolios__inner--title
+        %h2 
+          WORKS
+        %h3 
+          〜実績紹介〜
+        %h6
+          クリックでGitHubに飛びます。READMEにプレビュー付きで詳細を公開しています。
+      .my-portfolios__inner--boxarea
+        .portfolio-box
+          = link_to 'https://github.com/lllverb/money', target: 'blank' do
+            .portfolio-image1
+            .image-title
+              家計簿アプリ Z∀IW
+            .portfolio-content
+              %p
+                いわゆる家計簿アプリです。
+                ・カテゴリ別
+                ・カテゴリ詳細別
+                ・人物別 
+                での3種類の分類表示が可能です。
+        .portfolio-box
+          = link_to 'https://github.com/lllverb/quiz-app', target: 'blank' do
+            .portfolio-image2
+            .image-title
+              QUIZアプリ
+            .portfolio-content
+              %p
+                4択クイズアプリです。 
+                他にも某テレビ番組の企画のゲームや
+                有名youtuberの企画のゲームなどを実装しています。
+        .portfolio-box
+          = link_to 'https://github.com/lllverb/mercari', target: 'blank' do
+            .portfolio-image3
+            .image-title
+              フリマアプリクローン
+            .portfolio-content
+              %p
+                某有名フリマアプリのクローンアプリです。
+  .my-career
+    .my-career__inner
+      .my-career__inner--bar
+        .bar
+          .dot
+          .year
+            %p 2009 ~ 2012
+        .bar
+          .dot
+          .year
+            %p 2012 ~ 2015
+        .bar
+          .dot
+          .year
+            %p 2015 ~ 2018
+        .bar
+          .dot
+          .year
+            %p 2019 ~
+      .my-career__inner--box
+        .career-title
+          %h1 achivements
+        .career-detail
+          .career-detail__title
+            %h2 Rubik's cubeで世界へ
+          .career-detail__content
             %p
-              いわゆる家計簿アプリです。
-              ・カテゴリ別
-              ・カテゴリ詳細別
-              ・人物別 
-              での3種類の分類表示が可能です。
-      .portfolio-box
-        = link_to 'https://github.com/lllverb/quiz-app', target: 'blank' do
-          .portfolio-image2
-          .image-title
-            QUIZアプリ
-          .portfolio-content
+              2009大阪大会にて13歳未満日本記録を更新
             %p
-              4択クイズアプリです。 
-              他にも某テレビ番組の企画のゲームや
-              有名youtuberの企画のゲームなどを実装しています。
-      .portfolio-box
-        = link_to 'https://github.com/lllverb/mercari', target: 'blank' do
-          .portfolio-image3
-          .image-title
-            フリマアプリクローン
-          .portfolio-content
+              テレビ番組「ディズニータイム」に出演
             %p
-              某有名フリマアプリのクローンアプリです。
-.my-career
-  .my-career__inner
-    .my-career__inner--bar
-      .bar
-        .dot
-        .year
-          %p 2009 ~ 2012
-      .bar
-        .dot
-        .year
-          %p 2012 ~ 2015
-      .bar
-        .dot
-        .year
-          %p 2015 ~ 2018
-      .bar
-        .dot
-        .year
-          %p 2019 ~
-    .my-career__inner--box
-      .career-title
-        %h1 achivements
-      .career-detail
-        .career-detail__title
-          %h2 Rubik's cubeで世界へ
-        .career-detail__content
-          %p
-            2009大阪大会にて13歳未満日本記録を更新
-          %p
-            テレビ番組「ディズニータイム」に出演
-          %p
-            2009ドイツ世界大会へ日本代表として出場
-          %p 
-            2011タイ世界大会　15位で決勝進出
-          %p
-            2012松戸大会　日本記録を樹立
-      .career-detail
-        .career-detail__title
-          %h2 高校生クイズに打ち込む
-        .career-detail__content
-          %p
-            高校生クイズに出場
-          %p
-            初出場にて関東大会へ
-          %p
-            準決勝で黒ひげ危機一発に敗れる
-      .career-detail
-        .career-detail__title
-          %h2 よさこいと出会う
-        .career-detail__content
-          %p 
-            東京理科大学に入学
-          %p
-            Yosakoiソーランサークルへ入部
-          %p
-            2017年度の理科大の演舞
-          %p
-            「架気弄」の振り付け班長になり120人の前に立ち振り付けを教える
-      .career-detail
-        .career-detail__title
-          %h2 プログラミング学習を開始
-        .career-detail__content
-          %p 
-            2019年8月よりTECH::EXPERTに入学
-          %p
-            個人アプリ発表では最優秀の評価を得る
-          %p
-            チーム開発ではスクラムマスターを担当し、
-          %p
-            最優秀チームへと導いた
+              2009ドイツ世界大会へ日本代表として出場
+            %p 
+              2011タイ世界大会　15位で決勝進出
+            %p
+              2012松戸大会　日本記録を樹立
+        .career-detail
+          .career-detail__title
+            %h2 高校生クイズに打ち込む
+          .career-detail__content
+            %p
+              高校生クイズに出場
+            %p
+              初出場にて関東大会へ
+            %p
+              準決勝で黒ひげ危機一発に敗れる
+        .career-detail
+          .career-detail__title
+            %h2 よさこいと出会う
+          .career-detail__content
+            %p 
+              東京理科大学に入学
+            %p
+              Yosakoiソーランサークルへ入部
+            %p
+              2017年度の理科大の演舞
+            %p
+              「架気弄」の振り付け班長になり120人の前に立ち振り付けを教える
+        .career-detail
+          .career-detail__title
+            %h2 プログラミング学習を開始
+          .career-detail__content
+            %p 
+              2019年8月よりTECH::EXPERTに入学
+            %p
+              個人アプリ発表では最優秀の評価を得る
+            %p
+              チーム開発ではスクラムマスターを担当し、
+            %p
+              最優秀チームへと導いた

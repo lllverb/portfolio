@@ -2,7 +2,7 @@
   height: 1000px;
   width: 100%;
   background-color: #555;
-  transform: skewY(-5deg);
+  transform: skewY(-5deg) translateY(-7.5%);
   &__inner{
     transform: skewY(5deg);
     width: 100%;
@@ -59,7 +59,7 @@
         }
         .portfolio-image1, .portfolio-image2, .portfolio-image3{
           position: relative;
-          z-index: 1;
+          z-index: 2;
           transform: translateY(50%);
           transition:  0.5s;
           height: 250px;
@@ -80,13 +80,13 @@
           padding: 5px 10px;
           background-color: #333;
           color: white;
-          z-index: 10;
+          z-index: 2;
           border-radius: 10px;
           transition:  0.5s;
         }
         .portfolio-content{
           position: relative;
-          z-index: -1;
+          z-index: 1;
           transform: translateY(-50%);
           transition:  0.5s;
           height: 250px;

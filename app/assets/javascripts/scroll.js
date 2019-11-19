@@ -1,15 +1,17 @@
 $(function() {
   // 検討中/////////////////
-  // var works = $('#works');    
-  // works.hide();
-  // //スクロールが100に達したらボタン表示
-  // $(window).scroll(function () {
-  //     if ($(this).scrollTop() > 300) {
-  //         works.fadeIn(500);
-  //     } else {
-  //         works.fadeOut(500);
-  //     }
-  // });
+  var profile = $('#profile');
+  // profile.hide();
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      profile.addClass('fadeout');
+      profile.removeClass('fadein');
+    } else {
+      profile.removeClass('fadeout');
+      profile.addClass('fadein');
+    }
+  });
   //スクロールしてトップ
   // works.click(function () {
     //     $('body,html').animate({

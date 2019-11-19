@@ -1,5 +1,11 @@
 .my-career{
+  position: relative;
+  height: 100%;
+  width: 100%;
   margin-top: 100px;
+  padding-bottom: 200px;
+  background-color: #333;
+  z-index: 1;
   &__inner{
     display: flex;
     width: 70%;
