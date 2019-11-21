@@ -29,7 +29,7 @@
     border-right: 50vw solid transparent;
     border-bottom: 50vh solid transparent;
     border-left: 50vw solid transparent;
-    animation: totop 1.5s linear 5s forwards;
+    animation: totop 1.5s ease-in-out 5s forwards;
   }
   #triangle2{
     position: absolute;
@@ -40,7 +40,7 @@
     border-right: 50vw solid black;
     border-bottom: 50vh solid transparent;
     border-left: 50vw solid transparent;
-    animation: toright 1.5s linear 5s forwards;
+    animation: toright 1.5s ease-in-out 5s forwards;
   }
   #triangle3{
     position: absolute;
@@ -51,7 +51,7 @@
     border-right: 50vw solid transparent;
     border-bottom: 50vh solid black;
     border-left: 50vw solid transparent;
-    animation: tobottom 1.5s linear 5s forwards;
+    animation: tobottom 1.5s ease-in-out 5s forwards;
   }
   #triangle4{
     position: absolute;
@@ -62,7 +62,7 @@
     border-right: 50vw solid transparent;
     border-bottom: 50vh solid transparent;
     border-left: 50vw solid black;
-    animation: toleft 1.5s linear 5s forwards;
+    animation: toleft 1.5s ease-in-out 5s forwards;
   }
   h1 {
     position: absolute;
