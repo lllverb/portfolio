@@ -1,7 +1,7 @@
 setTimeout(function() {
   $('h1').css('visibility', 'visible')
   $('#logo').css('background-color', 'transparent')
-}, 1550);
+}, 1700);
 setTimeout(function() {
   $('h1').fadeOut();
   $('#logo').fadeOut();
