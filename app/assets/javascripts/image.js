@@ -3,7 +3,7 @@ document.addEventListener("turbolinks:load", function() {
     
     const radius = 5;
     setInterval(() => {
-      const el = document.querySelector('img');
+      const el = document.querySelector('.image-container');
       const t = new Date().getTime() / 1500;
       const x =(Math.cos(t) * radius);
       const X =(Math.sin(t) * radius * 3);
@@ -27,6 +27,8 @@ document.addEventListener("turbolinks:load", function() {
     }
     setInterval(nextImage, 5000);
   }
+  $('#logo').empty()
+  $('#logo').append(`<img src="/assets/rubik-43d4944254c650433693a377363cb018addde88c127e297c3d56cf87de8111ed.png" />`)
   $('.image-container').empty()
   $('.image-container').append(`<img src="/assets/azuki-f8931c7b9dced5251d1e7362ca815ebb4ab0cade6bd9979f1a385d4533beaff4.jpg" />`)
   $('.profile-image').empty()
