@@ -17,7 +17,7 @@
       right: 20vw;
       width: 200px;
       height: 200px;
-      animation: logoleft 1s ease-in-out forwards, logorotate 1s ease-in-out forwards;
+      animation: logoleft 1s ease-in-out forwards;
     }
   }
   #triangle1{
@@ -83,7 +83,10 @@
   }
 }
 .my-profile__inner{
-  animation: zoomin 0.5s linear 5s forwards;
+  animation: zoomin 1s linear forwards;
+}
+#main-contents{
+  display: none;
 }
 @keyframes typing { from { width: 0; } }
 @keyframes totop { 100% { transform: translateY(-100vh); } }
